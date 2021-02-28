@@ -75,9 +75,9 @@ class TemplateEngine
         $output = $this->getOutputForView($view);
 
         if (count($variables) > 0) {
-            $content = $this->replaceVariablesForOutput($output, $variables);
+            $output = $this->replaceVariablesForOutput($output, $variables);
         }
 
-        echo $content;
+        echo $output;
     }
 }
